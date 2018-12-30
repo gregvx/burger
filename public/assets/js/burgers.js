@@ -28,7 +28,7 @@ $(function() {
   
       var newBurger = {
         burger_name: $("#burg").val().trim(),
-        devoured: $("[name=devo]:checked").val().trim()
+        devoured: 0
       };
 
       console.log("you clicked the button to create a new burger. Its properties will be: " + JSON.stringify(newBurger));

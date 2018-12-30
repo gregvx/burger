@@ -42,7 +42,7 @@ router.post("/api/burgers", function(req, res) {
 
 router.put("/api/burgers/:id", function(req, res) {
   console.log("in the controller method for editing status of a burger with teh id of: " + req.params.id);
-  var condition = "item_id = " + req.params.id;
+  var condition = "id = " + req.params.id;
 
   console.log("condition", condition);
 

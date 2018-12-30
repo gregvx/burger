@@ -1,8 +1,17 @@
-li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
+body {
+  background-image: url("../img/green_dust_scratch.png");
+  text-align: center;
+}
+
+
+
+/* .uneaten {
+  background-color: blue;
+}
+.eaten {
+  background-color: blueviolet;
+} */
+
   
   .label {
     font-weight: bold;

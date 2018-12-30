@@ -87,7 +87,7 @@ var orm = {
     });
   },
   // An example of objColVals would be {devoured:true}
-  // An example of condition would be "item_id = 2"
+  // An example of condition would be "id = 2"
   updateOne: function(table, objColVals, condition, cb) {
     //   console.log("The updateOne() method has been called. The first var table is: " + table
     // + "\nThe second var objColVals is: " + JSON.stringify(objColVals)
