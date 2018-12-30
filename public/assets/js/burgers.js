@@ -7,9 +7,10 @@ $(function() {
       var newStatusState = {
         devoured: newStatus
       };
-  
+      // alert("You clicked a button to change status. the id is: " + id + " and the new state will be: " + newStatusState.devoured);
+      // console.log("You clicked a button to change status. the id is: " + id + " and the new state will be: " + newStatusState.devoured);
       // Send the PUT request.
-      $.ajax("/api/cats/" + id, {
+      $.ajax("/api/burgers/" + id, {
         type: "PUT",
         data: newStatusState
       }).then(
@@ -27,8 +28,10 @@ $(function() {
   
       var newBurger = {
         burger_name: $("#burg").val().trim(),
-        devoured: $("[name=devoured]:checked").val().trim()
+        devoured: $("[name=devo]:checked").val().trim()
       };
+
+      console.log("you clicked the button to create a new burger. Its properties will be: " + JSON.stringify(newBurger));
   
       // Send the POST request.
       $.ajax("/api/burgers", {
